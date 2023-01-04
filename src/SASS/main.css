@@ -1,0 +1,306 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  font-size: 62.33%;
+}
+
+#landingPage {
+  padding: 6rem 0;
+}
+#landingPage .pageTitle {
+  padding-bottom: 3rem;
+}
+#landingPage .pageTitle h1 {
+  font-size: 3.2rem;
+  text-align: center;
+}
+#landingPage .mainProductGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  border: 1rem solid #4fb0fd;
+  padding: 2.5rem 0;
+}
+#landingPage .mainProductGrid .mainProductItme {
+  position: relative;
+}
+#landingPage .mainProductGrid .mainProductItme:nth-child(1) {
+  grid-area: 1/1/2/2;
+}
+#landingPage .mainProductGrid .mainProductItme:nth-child(2) {
+  grid-area: 1/3/2/4;
+}
+#landingPage .mainProductGrid .mainProductItme:nth-child(3) {
+  grid-area: 2/2/3/3;
+}
+#landingPage .mainProductGrid .mainProductItme:nth-child(4) {
+  grid-area: 3/1/4/2;
+}
+#landingPage .mainProductGrid .mainProductItme:nth-child(5) {
+  grid-area: 3/3/4/4;
+}
+#landingPage .mainProductGrid .mainProductItme .mainProductItmeImg {
+  width: 360px;
+  height: 320px;
+  margin: 0 auto;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s linear;
+}
+#landingPage .mainProductGrid .mainProductItme .mainProductItmeImg:hover img {
+  transform: scale(1.1);
+  transition: all 0.6s;
+}
+#landingPage .mainProductGrid .mainProductItme .mainProductItmeImg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#landingPage .mainProductGrid .mainProductItme .mainProductTitle h3 {
+  font-size: 2.2rem;
+  position: absolute;
+  left: 12%;
+  bottom: 5%;
+  color: #202020;
+}
+
+#loggedDetailsPages .loggedLanding {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#loggedDetailsPages .loggedLanding .contentWrap {
+  text-align: center;
+}
+#loggedDetailsPages .loggedLanding .contentWrap .pageTitle h1 {
+  font-size: 3.2rem;
+}
+#loggedDetailsPages .loggedLanding .contentWrap p {
+  font-size: 1.8rem;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+#loggedDetailsPages .loggedLanding .contentWrap .btn {
+  width: 18rem;
+  height: 3.5rem;
+  font-size: 1.6rem;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#signInFormModal .modal-content .modal-header {
+  padding: 1rem 2rem;
+}
+#signInFormModal .modal-content .modal-header .modalTitle {
+  width: 100%;
+  text-align: center;
+  font-size: 2.2rem;
+}
+#signInFormModal .modal-content .modal-body {
+  padding: 2rem 8rem;
+}
+#signInFormModal .modal-content .modal-body .signInForm #sign_form .form-label {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+#signInFormModal .modal-content .modal-body .signInForm #sign_form .form-control {
+  font-size: 1.4rem;
+  height: 3.5rem;
+}
+#signInFormModal .modal-content .modal-body .signInForm #sign_form .form-control::-webkit-outer-spin-button, #signInFormModal .modal-content .modal-body .signInForm #sign_form .form-control::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#signInFormModal .modal-content .modal-body .signInForm #sign_form .form_subBtn {
+  font-size: 1.4rem;
+  width: 13rem;
+  height: 3.5rem;
+  font-weight: 500;
+}
+#signInFormModal .modal-content .modal-body .signInForm #sign_form .alert {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: red;
+  padding: 0;
+}
+
+#modalForm .modal-content .modal-header .h4 {
+  width: 100%;
+  text-align: center;
+  font-size: 2.2rem;
+}
+#modalForm .modal-content .modal-body {
+  padding: 1rem 3rem;
+}
+#modalForm .modal-content .modal-body p {
+  font-size: 1.2rem;
+}
+#modalForm .modal-content .modal-body form .form-group {
+  margin-bottom: 1rem;
+}
+#modalForm .modal-content .modal-body form .form-group label {
+  font-size: 1.6rem;
+}
+#modalForm .modal-content .modal-body form .form-group input {
+  height: 4rem;
+  font-size: 1.4rem;
+}
+#modalForm .modal-content .modal-body form .form-group p {
+  color: red;
+}
+#modalForm .modal-content .modal-body form .loginBtnWrap {
+  width: 100%;
+  text-align: center;
+}
+#modalForm .modal-content .modal-body form .loginBtnWrap .btn {
+  width: 15rem;
+  height: 4rem;
+  margin: 2rem 0;
+  font-size: 1.6rem;
+}
+
+#productListing .pageTitle {
+  padding: 5rem 0;
+  text-align: center;
+  font-size: 3rem;
+}
+#productListing .productListingRow {
+  display: flex;
+}
+#productListing .productListingRow .sideMenuWrap {
+  left: 0;
+  top: 20%;
+  background-color: #efeef3;
+  position: -webkit-sticky;
+  position: sticky;
+  padding: 2rem 1.5rem;
+  height: 100%;
+  width: 100%;
+}
+#productListing .productListingRow .sideMenuWrap h3 {
+  font-size: 2.4rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #5c5b5b;
+}
+#productListing .productListingRow .sideMenuWrap ul {
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+#productListing .productListingRow .sideMenuWrap ul li {
+  list-style: none;
+  font-size: 18px;
+}
+#productListing .productListingRow .sideMenuWrap ul li a {
+  text-decoration: none;
+  color: #202020;
+}
+#productListing .productListingRow .sideMenuWrap ul li a:hover {
+  color: rgb(23, 76, 175);
+}
+#productListing .productListingRow .sideMenuWrap.is-sticky {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 24.5rem;
+}
+#productListing .productListingRow .productListingWrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+#productListing .productListingRow .productListingWrap .productCardWrap {
+  position: relative;
+  margin-bottom: 2rem;
+}
+#productListing .productListingRow .productListingWrap .productCardWrap .itemImage {
+  width: 100%;
+  height: 30rem;
+  position: relative;
+}
+#productListing .productListingRow .productListingWrap .productCardWrap .itemImage img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+}
+#productListing .productListingRow .productListingWrap .productCardWrap:hover {
+  cursor: pointer;
+}
+#productListing .productListingRow .productListingWrap .productCardWrap:hover .itemDetails {
+  opacity: 1;
+  transform: scale(1);
+}
+#productListing .productListingRow .productListingWrap .productCardWrap .itemDetails {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  height: 100%;
+  background: rgba(8, 8, 8, 0.5019607843);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0);
+  transition: all 0.3s linear;
+  opacity: 0;
+}
+#productListing .productListingRow .productListingWrap .productCardWrap .itemDetails .pro_itemDetails {
+  background: #fff;
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#productListing .productListingRow .productListingWrap .productCardWrap .itemDetails .pro_itemDetails h5 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+#productListing .productListingRow .productListingWrap .productCardWrap .itemDetails .pro_itemDetails h6 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+#productListing .productListingRow .productListingWrap .productCardWrap .itemDetails .pro_itemDetails h6 del {
+  color: #919090;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+#productListing .productListingRow .productListingWrap .productCardWrap .itemDetails .pro_itemDetails .addtoCartBtn {
+  width: 60%;
+  background: #0090ff;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-top: 2rem;
+  color: #fff;
+}/*# sourceMappingURL=main.css.map */
